@@ -1,0 +1,331 @@
+body, html, h1, h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "SF Pro TC","SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  background-color: rgb(13,13,13);
+  color: #44f1a6;
+}
+
+a, a:visited {
+  color: #828282;
+  text-decoration: none;
+}
+
+a:hover, a.active {
+  color: #4183c4;
+}
+
+a b {
+  color: #aaa;
+}
+
+p {
+  color: whitesmoke;
+  margin-left: 10px;
+  line-height: 24px;
+}
+
+p b {
+  color: white;
+}
+
+hr {
+    color: red;
+}
+
+#header {
+  border-top: 1px solid #44f1a6;
+  border-bottom: 1px dotted #44f1a6;
+  background-color: rgb(34,94,68);
+  color: rgb(13,13,13);
+  font-size: 39px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 7px;
+}
+
+#header a {
+  color: rgb(13,13,13);
+  background-color: rgb(34,94,68);
+}
+
+#header i {
+  font-size: 31px;
+}
+
+#header table, #footer table {
+    position: relative;
+    left: -170px;
+}
+
+#header table img {
+    margin-right: 8px;
+}
+
+#body {
+  width: 1024px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#body:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+#sidebar {
+  float: left;
+  width: 327px;
+  margin-left: 20px;
+}
+
+#sidebar:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+#footer {
+  margin-top: 40px;
+  padding: 30px 0;
+  font-size: 12px;
+  line-height: 1.5;
+  color: rgb(39,108,78);
+  border-top: 1px dotted rgb(29,63,48);
+  text-align: center;
+}
+
+#footer a {
+  color: rgb(39,108,78);
+}
+
+#footer a:hover, #footer a.active {
+  color: rgb(48,152,107);
+}
+
+#footer img {
+  padding-left: 10px;
+  opacity: 0.8;
+}
+
+#input-type {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+#bits {
+  width: 46px;
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc;
+  border-radius: 4px;
+  padding: 6px 12px;
+}
+
+#index:after {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+#index .menu {
+  float: left;
+  min-width: 200px;
+}
+
+#main {
+  float: left;
+  width: 677px;
+}
+
+#main h1 {
+  margin: 7px;
+}
+
+#main h1 span {
+  font-size: 18px;
+}
+
+#output1, #output2 {
+    height: 90px;
+}
+
+.hr {
+    color: rgb(29,63,48);
+}
+
+.col {
+  width: 50%;
+  float: left;
+}
+
+.option-block {
+  color: rgb(48,152,107);
+  padding: 20px;
+  border-bottom: 2px dashed rgb(29,63,48);
+  text-align: center;
+}
+
+.option-block b {
+  color: #44f1a6;
+}
+
+.description {
+  color: gray;
+  margin: 10px 0;
+}
+
+.sequence {
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+}
+
+.submit {
+  padding: 20px;
+  text-align: center;
+  color: rgb(48,152,107);
+}
+
+.submit b {
+  color: #44f1a6;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li a, .menu-group {
+  display: block;
+  min-height: 30px;
+  line-height: 30px;
+  padding-left: 20px;
+}
+
+.menu-group {
+  font-weight: bold;
+}
+
+.menu li a:hover, .menu li a.active {
+  padding-left: 19px;
+  border-left: 1px solid #828282;
+  color: #fff;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: black;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.download {
+    position: relative;
+    top: -90px;
+    left: 50px;
+    font-weight: bolder;
+    background-color: #4CAF50; 
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border-color: rgb(34,94,68);        
+    width: 180px;
+    height: 48px;
+    transition-duration: 0.4s;
+}
+
+.download:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  background-color: #e7e7e7;
+  color: black;
+}
+
+button {
+    background-color: #e7e7e7; 
+    color: black;
+    font-size: 20px;
+    margin: 6px 0;
+    border-radius: 10px;
+    border-color: rgb(34,94,68);        
+    width: 120px;
+    height: 46px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+textarea {
+  padding: 14px;
+  font-size: 13pt;
+  max-width: 93%;
+  width: 93%;
+  height: 200px;
+  border: 3px double #ccc;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background: #e0e0e0; /* Old browsers */
+  background: -moz-linear-gradient(top, #e0e0e0 0%, #ffffff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e0e0e0), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #e0e0e0 0%,#ffffff 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #e0e0e0 0%,#ffffff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0e0e0', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+::-webkit-input-placeholder { 
+  text-align: center;
+  font-size: 16pt;
+}
+::-moz-placeholder { 
+  text-align: center;
+  font-size: 16pt;
+}
+:-ms-input-placeholder{ 
+  text-align: center;
+  font-size: 16pt;
+}
