@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="unique, secure and personal technique to create, store and restore your mnemonic seed phrase crypto wallet without paper, software and hardware device. simply your memory">
+    <meta name="keywords" content="seed phrase, seed wallet, seed crypto, mnemonic seed, mnemonic phrase, recover seed, recover wallet, recover phrase, create seed, backup seed">
+    <title>Memory SEED - BIP39</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/MemorySEED_logo.png" />
+  </head>
+  <body>
+    <div id="header">
+        <table align="center">
+            <tr>
+            	<td><img src="img/MemorySEED_logo.png"></td>
+            	<td><a href="index.html">Memory SEED<i> - BIP39</i></a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="body">
+      <a href="download/MemorySEED.zip"><button class="download">DOWNLOAD</button></a>
+      <div id="main">
+      
+        <h1>Fredkins</h1>
+        
+        <div class="input">
+          <textarea id="sequence" class="sequence" placeholder="Custom Sequence">1 8 8 24 8 64 24 112 8 64 64 192 24 192 112 416 8 64 64 192</textarea>  
+          <textarea id="input" placeholder="Input"></textarea>
+          <div class="option-block">
+            Input Length Byte: <b id="input-byte">0</b>&ensp;<a class="tooltip" href="javascript:copyData('input')">
+            <img src="img/copy.png" onmouseout="tooltipMessage('input')"><span class="tooltiptext" id="input-tooltip">COPY Input</span></a>
+          </div>
+        </div>
+        
+        <div class="submit">
+          Output 1 Length Byte: <b id="output1-byte">0</b>&ensp;<a class="tooltip" href="javascript:copyData('output1')">
+          <img src="img/copy.png" onmouseout="tooltipMessage('output1')"><span class="tooltiptext" id="output1-tooltip">COPY Output 1</span></a>
+          &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+          Output 2 Length Byte: <b id="output2-byte">0</b>&ensp;<a class="tooltip" href="javascript:copyData('output2')">
+          <img src="img/copy.png" onmouseout="tooltipMessage('output2')"><span class="tooltiptext" id="output2-tooltip">COPY Output 2</span></a>
+        </div>
+        
+        <div class="output">
+          <textarea id="output1" placeholder="Output 1"></textarea>
+          <textarea id="output2" placeholder="Output 2"></textarea>
+        </div>
+        
+      </div>
+      <div id="sidebar">
+        <div class="col">
+            <ul class="menu">
+              <li><br />
+                <div class="menu-group">SEED</div>
+              </li>
+              <li><a href="seed_create_12.html">Create 12</a></li>
+              <li><a href="seed_create_24.html">Create 24</a></li>
+              <li><br /></li>
+              <li>
+                <div class="menu-group">Transformation</div>
+              </li>
+              <li><a href="sha224.html"><b>0</b> ... SHA 224</a></li>
+              <li><a href="sha256.html"><b>1</b> ... SHA 256</a></li>
+              <li><a href="sha384.html"><b>2</b> ... SHA 384</a></li>
+              <li><a href="sha512.html"><b>3</b> ... SHA 512</a></li>
+              <li><a href="sha3_224.html"><b>4</b> ... SHA3 224</a></li>
+              <li><a href="sha3_256.html"><b>5</b> ... SHA3 256</a></li>
+              <li><a href="sha3_384.html"><b>6</b> ... SHA3 384</a></li>
+              <li><a href="sha3_512.html"><b>7</b> ... SHA3 512</a></li>
+              <li><a href="keccak_224.html"><b>8</b> ... Keccak 224</a></li>
+              <li><a href="keccak_256.html"><b>9</b> ... Keccak 256</a></li>
+              <li><a href="keccak_384.html"><b>a</b> ... Keccak 384</a></li>
+              <li><a href="keccak_512.html"><b>b</b> ... Keccak 512</a></li>
+              <li><a href="shake_128.html"><b>c</b> ... Shake 128</a></li>
+              <li><a href="shake_256.html"><b>d</b> ... Shake 256</a></li>
+              <li><a href="base64.html"><b>e</b> ... Base 64</a></li>
+              <li><a href="base80.html"><b>f</b> .... Base 80</a></li>
+            </ul>
+        </div>
+        <div class="col">
+            <ul class="menu">
+              <li><br />
+                <div class="menu-group">WEB</div>
+              </li>
+              <li><a target="_blank" href="https://tails.boum.org/">OP. System</a></li>
+              <li><a target="_blank" href="https://blockchair.com/">Block Explorer</a></li>
+              <li><br /></li>
+              <li>
+                <div class="menu-group">Split in 2 Parts</div>
+              </li>
+              <li><a href="odd_rule.html"><b>0</b> ... Odd Rule</a></li>
+              <li><a href="no_red.html"><b>1</b> ... No Red</a></li>
+              <li><a href="primes.html"><b>2</b> ... Primes</a></li>
+              <li><a href="queens.html"><b>3</b> ... Queens</a></li>
+              <li><a href="toothpick.html"><b>4</b> ... Toothpick</a></li>
+              <li><a href="snowflake.html"><b>5</b> ... Snowflake</a></li>
+              <li><a href="recamans.html"><b>6</b> ... Recamans</a></li>
+              <li><a href="mersenne.html"><b>7</b> ... Mersenne</a></li>
+              <li><a href="fibonacci.html"><b>8</b> ... Fibonacci</a></li>
+              <li><a href="gullwing.html"><b>9</b> ... Gullwing</a></li>
+              <li><a href="fredkins.html"><b>a</b> ... Fredkins</a></li>
+              <li><a href="kaplan.html"><b>b</b> ... Kaplan</a></li>
+              <li><a href="empires.html"><b>c</b> ... Empires</a></li>
+              <li><a href="polygons.html"><b>d</b> ... Polygons</a></li>
+              <li><a href="triangles.html"><b>e</b> ... Triangles</a></li>
+              <li><a href="planars.html"><b>f</b> .... Planars</a></li>
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div id="footer">
+        <table align="center">
+            <tr>
+            	<td>&copy; 2022 Memory SEED&ensp;-&ensp;<a target="_blank" href="https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki"><i>BIP39 official specification</i></a> </td>
+                <td><a class="tooltip" target="_blank" href="ipfs://memory-seed.crypto"><img src="img/unstoppable_domains.png" /><span class="tooltiptext">Ustoppable Domains</span></a></td>
+                <td><a class="tooltip" target="_blank" href="https://web.cubbit.io/link/#4e021ed0-39db-4430-a56d-88b0cb6e5ca4!F/toB1cReA+K9B7bQpOFICpqJTreJPe8zLQl5uCIbso!Fod8kZ+M+uV92zHUCOxr2g"><img src="img/cubbit.png" /><span class="tooltiptext">CUBBIT</span></a></td>
+                <td><a class="tooltip" target="_blank" href="https://github.com/QuanticoDB/Memory-SEED"><img src="img/github.png" /><span class="tooltiptext">GITHUB</span></a></td>
+                <td><a class="tooltip" target="_blank" href="https://memory-seed.com"><img src="img/website.png" /><span class="tooltiptext">WEB SITE</span></a></td>
+            	<td><a class="tooltip" target="_blank" href="https://gitlab.com/QuanticoDB/memory-seed"><img src="img/gitlab.png" /><span class="tooltiptext">GITLAB</span></a></td>
+            </tr>
+        </table>
+    </div>
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/sequence.js"></script>
+    <script src="js/tooltip.js"></script>
+    
+  </body>
+</html>
